@@ -29,7 +29,8 @@ app.get("/api/health", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
 
-server.listen(PORT, "0.0.0.0", () => {
-  console.log("server is running on PORT:" + PORT);
-  connectDB();
+connectDB().then(() => {
+  server.listen(PORT, "0.0.0.0", () => {
+    console.log("server is running on PORT:" + PORT);
+  });
 });
