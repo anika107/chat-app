@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://chat-app-0-green.vercel.app/api",
+  baseURL: "https://chat-app-bc5x.onrender.com/api",
 });
 
 // attach the bearer token to every request
