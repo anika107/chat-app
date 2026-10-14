@@ -17,7 +17,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://chat-app-bc5x.onrender.com",
+    origin: "https://chat-app-n6ux.vercel.app",
     credentials: true,
   })
 );
